@@ -1,4 +1,4 @@
-﻿namespace FSharpImplementation
+﻿namespace FSharpImplementationNamespace
 
 module SeparatingAxisTheorem =
     let mathTest a b =
