@@ -11,4 +11,13 @@ clr.AddReference("FSharpImplementation")
 
 from FSharpImplementationNamespace import SeparatingAxisTheorem
 
-print(SeparatingAxisTheorem.mathTest(9, 2))
+if __name__ == "__main__":
+    from System import Console
+    Console.WriteLine("Hello from .net")
+    print()
+
+    print(SeparatingAxisTheorem.mathTest(9, 2))
+    print()
+
+    print(SeparatingAxisTheorem.argTest(((9, 2), (54, 4))))
+    print()
