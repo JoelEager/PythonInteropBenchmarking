@@ -26,5 +26,5 @@ if __name__ == "__main__":
     print(SeparatingAxisTheorem.mathTest(9, 2))
     print()
 
-    print(SeparatingAxisTheorem.argTest(((9, 2), (54, 4))))
+    print(SeparatingAxisTheorem.typeTest(((9, 2), (54, 4))))
     print()
