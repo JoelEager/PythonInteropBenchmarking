@@ -8,6 +8,22 @@ module SeparatingAxisTheorem =
         printfn "%A" values
         values
 
+    let max (values: array<int>) =
+        let mutable maxValue = values.[0]
+
+        for value in values do
+            if maxValue < value then maxValue <- value
+
+        maxValue
+
+    let min (values: array<int>) =
+        let mutable minValue = values.[0]
+
+        for value in values do
+            if minValue > value then minValue <- value
+
+        minValue
+
     let edgeVector (point1: array<int>) (point2: array<int>) =
         point2.[0] - point1.[0], point2.[1] - point1.[1]
 
