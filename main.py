@@ -17,6 +17,22 @@ def build_projectile(x_pos):
     return (x_pos - 1, 99), (x_pos + 1, 99), (x_pos - 1, 101), (x_pos + 1, 101)
 
 
+def validate_implementations():
+    target = ((195, 95), (205, 95), (205, 105), (195, 105))
+    x_pos = 100
+
+    while x_pos < 300:
+        projectile = build_projectile(x_pos)
+
+        rp = python_implementation.has_collided(target, projectile)
+        rf = fsharp_implementation.has_collided(target, projectile)
+
+        print(x_pos, rp, rf)
+        assert rp == rf
+
+        x_pos += 1
+
+
 def run_benchmark(iterations, test_implementation):
     """
     Runs a speed benchmark on test_implementation.
