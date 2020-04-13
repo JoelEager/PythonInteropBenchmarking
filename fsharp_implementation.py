@@ -1,3 +1,8 @@
+"""
+Provides an interface between the F# implementation of SAT and Python.
+
+If this script is run directly it will make some test calls into F# and print the results.
+"""
 import sys
 from os import path
 
@@ -10,6 +15,8 @@ sys.path.append(library_dir)
 clr.AddReference("FSharpImplementation")
 
 from FSharpImplementationNamespace import SeparatingAxisTheorem
+
+has_collided = SeparatingAxisTheorem.hasCollied
 
 if __name__ == "__main__":
     from System import Console

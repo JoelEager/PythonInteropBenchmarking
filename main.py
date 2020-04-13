@@ -2,11 +2,14 @@
 CLI for benchmarking the different implementations.
 """
 from datetime import datetime
-import python_implementation
 from sys import argv, exit
 
+import fsharp_implementation
+import python_implementation
+
 IMPLEMENTATIONS = {
-    "python": python_implementation.has_collided
+    "python": python_implementation.has_collided,
+    "fsharp": fsharp_implementation.has_collided
 }
 
 

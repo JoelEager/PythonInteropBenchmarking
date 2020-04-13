@@ -8,3 +8,7 @@ module SeparatingAxisTheorem =
         printfn "%A" xs
         xs
 
+    let hasCollied (poly1 : array<array<int>>) (poly2 : array<array<int>>) =
+        printfn "%A" poly1
+        printfn "%A" poly2
+        true
