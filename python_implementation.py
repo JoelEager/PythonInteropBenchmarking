@@ -27,7 +27,7 @@ def orthogonal(vector):
     """
     :return: A new vector which is orthogonal to the given vector
     """
-    return vector[1], - vector[0]
+    return vector[1], -vector[0]
 
 
 def dot_product(vector1, vector2):
