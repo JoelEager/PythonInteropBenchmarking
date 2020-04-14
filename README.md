@@ -29,3 +29,10 @@ python3 test.py
 ```bash
 python3 fsharp_implementation.py
 ```
+
+## Results
+These results where collected on a desktop with an AMD Ryzen 5 2600X using 50,000 iterations.
+
+**Python:** 72.1551 seconds
+
+**F#:** 61.6405 seconds
