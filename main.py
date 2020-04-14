@@ -46,7 +46,7 @@ def main():
     try:
         iterations, implementation = parse_args()
     except:
-        print("Usage: python main.py [iterations] [implementation]")
+        print("Usage: python3 main.py [iterations] [implementation]")
         print("Valid implementations:", ", ".join(IMPLEMENTATIONS.keys()))
         exit(1)
 

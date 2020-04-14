@@ -24,3 +24,4 @@ def validate_implementations():
 
 if __name__ == "__main__":
     validate_implementations()
+    print("Test passed")
